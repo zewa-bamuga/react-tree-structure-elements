@@ -1,8 +1,14 @@
-<p align="center">
-    <img src="https://static.tildacdn.net/tild3230-6435-4265-b731-363433356238/mcc-logo.svg" alt="Лого MCC" style="background-color: white; padding: 15px; border-radius: 8px; width: 200px;">
-</p>
+<div align="center">
+    <img src="https://static.tildacdn.net/tild3230-6435-4265-b731-363433356238/mcc-logo.svg" 
+         alt="Лого MCC" 
+         style="background-color: white; 
+                padding: 20px; 
+                border-radius: 8px; 
+                max-width: 250px; 
+                width: 100%;">
+</div>
 
-# React App for MCC Software test assignment
+# React App for MCC Software test task
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
