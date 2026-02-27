@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #fff;
+}
+
+.header {
+    background-color: #ffc000;
+    padding: 25px 100px;
+}
+
+aside {
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: 50px 100px;
+    width: 50%;
+    float: left;
+}
+
+main .tree {
+    margin-bottom: 50px;
+    background-color: #39a935;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main .children{
+    margin-left: 80px;
+    margin-top: -40px;
+}
+
+main .toggle-btn{
+    float: right;
+    margin-right: 25px;
+    background-color: #39a935;
+    color: #ffc000;
+    cursor: pointer;
+    border: 0;
+    transform: scale(2);
+}
+
+main .delete-icon {
+    float: right;
+    margin-right: 25px;
+    color: #ffc000;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+main .add-icon {
+    float: right;
+    margin-right: 25px;
+    color: #ffc000;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+main .change-icon {
+    float: right;
+    margin-right: 25px;
+    color: #ffc000;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+main .delete-icon:hover,
+main .add-icon:hover,
+main .change-icon:hover,
+main .toggle-btn{
+    opacity: 0.5;
+}
+
+aside form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+aside form button {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 0;
+
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 500ms ease;
+}
+
+aside form button:hover {
+    transform: scale(1.02);
+}
+
+aside .create-icon, .reset-icon{
+    color: #ffc000;
+    width: 200px;
+    height: 200px;
 }
